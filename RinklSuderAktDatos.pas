@@ -38,16 +38,16 @@ uses RinklSuderAktas, Kalendorius;
 //---------------------------------------------------------
 procedure TfrmRinklSuderAktDatos.Button1Click(Sender: TObject);
 var
-  data1t,
-  data2t : integer;
+  data1t_New,
+  data2t_New : integer;
 begin
-  data1t := getint(edtdataPr.Text);
-  data2t := getint(edtDataPb.Text);
+  data1t_New := getint(edtdataPr.Text);
+  data2t_new := getint(edtDataPb.Text);
   with TfrmRinklSuderAktas.Create(self) do
   try
     Icon := TForm(Self).Icon;
-    data1 := data1t;
-    data2 := data2t;
+    data1 := data1t_New;
+    data2 := data2t_new;
     if ShowModal = mrOk then
     begin
         //
